@@ -2,7 +2,7 @@ import './App.css'
 import { SecondComponent } from "./SecondComponent";
 import { Button } from "./Button";
 import { List } from "./List";
-
+import { EmployeeTable } from './EmployeeTable';
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <List />
 			<Button />
       <SecondComponent />
+      <EmployeeTable />
 		</>
 	);
 }
