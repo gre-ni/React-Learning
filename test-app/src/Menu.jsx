@@ -1,11 +1,14 @@
 export const Menu = () => {
-    return <>
-    <h1>Menu</h1>
-    <ul>
-        <li>About</li>
-        <li>This</li>
-        <li>Thiat</li>
-    </ul>
-    <button>Submit</button>
-    </>
+
+    const heading = 'Menu';
+    const menuItems = ['About', 'Contact', 'Pricing'];
+    const printToConsole = () => console.log(heading);
+
+    return <div id="menu">
+        <h1>{heading}</h1>
+        <ul>
+            {menuItems.map(item => <li>{item}</li>)}
+        </ul>
+        <button onClick={printToConsole}>Submit</button>
+    </div>
 }
