@@ -8,10 +8,10 @@ import { EmployeeTable } from './EmployeeTable';
 function App() {
 	return (
 		<>
-      <List />
-			<Button />
-      <SecondComponent />
-      <EmployeeTable />
+    	<List />
+		<Button />
+    	<SecondComponent />
+    	<EmployeeTable />
 		</>
 	);
 }
