@@ -7,7 +7,7 @@ export const Menu = () => {
     return <div id="menu">
         <h1>{heading}</h1>
         <ul>
-            {menuItems.map(item => <li>{item}</li>)}
+            {menuItems.map(item => <li key={item}>{item}</li>)}
         </ul>
         <button onClick={printToConsole}>Submit</button>
     </div>
