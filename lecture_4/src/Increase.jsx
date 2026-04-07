@@ -12,6 +12,5 @@ export const IncreaseByOne = () => {
         <p>Number: {count}</p>
         <button onClick={increaseByOne}>Add +1</button>
         {(count % 2 !== 0) && <p>Odd number</p>}
-        {(count) && <p>Even number</p>}
     </div>
 }
