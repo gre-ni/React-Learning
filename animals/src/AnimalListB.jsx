@@ -25,7 +25,7 @@ export const AnimalListB = () => {
         {allAnimals.map(animal => animal.visible && <button 
             key={animal.id}
             onClick={() => setAllAnimals(
-                // TODO: Append animal object to the list, id + 1, animal.type -> this type should be set to invisible right after
+                // TODO: First append animal object to the array, id + 1, animal.type -> this type should be set to invisible right after
                 allAnimals.map( listAnimal =>
                     listAnimal.type === animal.type ? {...listAnimal, visible: false} : listAnimal
                 )
