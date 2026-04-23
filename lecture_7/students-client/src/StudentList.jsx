@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const StudentList = () => {
     const [studentInfo, setStudentInfo] = useState([]);
@@ -19,7 +20,7 @@ export const StudentList = () => {
     return (
         <div id="student-list">
             <h1>List of students</h1>
-            <table class="table table-light table-striped table-bordered">
+            <table className="table table-light table-striped table-bordered">
                 <thead>
                     <tr>
                         <th>id</th>
@@ -33,7 +34,11 @@ export const StudentList = () => {
                 <tbody>
                     {studentInfo.map((student) => (
                         <tr key={student.id}>
-                            <td>{student.id}</td>
+                            <td>
+                                <Link to={`/students/${student.id}`}>
+                                    {student.id}
+                                </Link>
+                            </td>
                             <td>{student.firstName}</td>
                             <td>{student.lastName}</td>
                             <td>{student.gender}</td>
